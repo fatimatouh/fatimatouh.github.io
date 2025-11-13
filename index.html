@@ -1,93 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Portfolio – Fatima NDIAYE</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="topband">
-    <div class="container">
-      <div class="intro">
-        <h1>Fatima <span class="surname">NDIAYE</span></h1>
-        <p class="tagline">Étudiante en Master 2 – Data Science &amp; Génie Logiciel | Passionnée par l’IA, le développement d’application et l’innovation numérique. Je suis à la recharche d'un stage.</p>
-        <a class="btn" href="Fatima_NDIAYE_CV.pdf" download>⬇ Télécharger mon CV</a>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">Fatima <span>NDIAYE</span></div>
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a href="#skills">Compétences</a>
+        <a href="#news">Actualités</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="photo-wrapper">
-        <img src="Ma_Photo_Pro_Cadree.png" alt="Photo de Fatima" class="profile-photo" />
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="intro">
+        <h1>Fatima <strong>NDIAYE</strong></h1>
+        <p class="tagline">Étudiante en Master 2 – Data Science &amp; Génie Logiciel | Passionnée par l’IA, le développement d’application et l’innovation numérique. Je suis à la recherche d'un stage.</p>
+        <div class="cta">
+          <a class="btn" href="FATIMA_NDIAYE_CV.pdf" download>⬇ Télécharger mon CV</a>
+          <a class="btn ghost" href="https://github.com/fatimatouh" target="_blank">Voir mon GitHub</a>
+        </div>
+        <ul class="contact-inline">
+          <li>✉️ <a href="mailto:fvtimaabinetou15@gmail.com">fvtimaabinetou15@gmail.com</a></li>
+          <li>📞 +221 77 087 7406</li>
+          <li>🔗 <a href="https://www.linkedin.com/in/fatima-ndiaye-220a79249" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="photo-wrap">
+        <img src="Ma_Photo_Pro_Cadree.png" alt="Photo Fatima" class="photo">
       </div>
     </div>
   </header>
 
   <main class="container main-grid">
-    <section class="about card">
-      <h2>À propos</h2>
-      <p>Étudiante en Master 2 Data Science et Génie Logiciel, je combine des compétences en analyse de données, développement et systèmes réseaux avec une forte expérience en relation client. Rigoureuse, curieuse et motivée, je mène des projets concrets et recherche un stage/mission où je pourrai contribuer et apprendre.</p>
 
-      <ul class="contact-list">
-        <li>📍 Thiaroye Azur, Dakar, Sénégal</li>
-        <li>✉️ <a href="mailto:fvtimaabinetou15@gmail.com">fvtimaabinetou15@gmail.com</a></li>
-        <li>📞 +221 77 087 7406</li>
-        <li>🔗 <a href="https://www.linkedin.com/in/fatima-ndiaye-220a79249" target="_blank">LinkedIn</a></li>
+    <section id="about" class="card about">
+      <h2>À propos</h2>
+      <p>Étudiante en <strong>Master 2 Data Science et Génie Logiciel</strong>, je combine une solide formation en <em>réseaux, systèmes et intelligence artificielle</em> avec une expérience en relation client. Rigoureuse, curieuse et motivée, je souhaite contribuer à des projets d'innovation, de recherche ou de développement logiciel.</p>
+
+      <h3>Formation</h3>
+      <ul class="list-simple">
+        <li><strong>Master 2</strong> – Data Science &amp; Génie Logiciel, Université Alioune Diop de Bambey (Janv. 2025 – en cours)</li>
+        <li><strong>Master 2</strong> – Systèmes Réseaux et Infrastructures Virtuelles, Université Numérique Cheikh Hamidou Kane (Avr. 2024 – en cours)</li>
+        <li><strong>Licence 3</strong> – Systèmes Réseaux et Télécommunications, Université Alioune Diop de Bambey (2022 – 2023)</li>
+        <li><strong>Baccalauréat S2</strong> – Lycée de Thiaroye (2018 – 2019)</li>
       </ul>
     </section>
 
-    <aside class="skills card">
+    <aside id="skills" class="card sidebar">
       <h2>Compétences</h2>
-      <ul>
-        <li><strong>Langages :</strong> Python, Java, C, PHP, Dart</li>
-        <li><strong>Frameworks :</strong> Django, React, Flutter</li>
-        <li><strong>Data :</strong> MySQL, Oracle, Machine Learning, NLP, Deep Learning</li>
-        <li><strong>Outils :</strong> Docker, Kubernetes, CI/CD, DevOps</li>
-      </ul>
-      <h3>Soft skills</h3>
-      <ul>
-        <li>Communication &amp; écoute active</li>
-        <li>Organisation &amp; rigueur</li>
-        <li>Travail d'équipe</li>
+      <div class="skill-group"><strong>Langages</strong><p>Python, Java, C, PHP, Dart</p></div>
+      <div class="skill-group"><strong>Frameworks</strong><p>Django, React, Flutter, Elixir/Phoenix, Vue.js</p></div>
+      <div class="skill-group"><strong>Data &amp; IA</strong><p>Machine Learning, NLP, Deep Learning, Computer Vision, Pandas, Scikit-learn</p></div>
+      <div class="skill-group"><strong>Bases de données</strong><p>MySQL, Oracle, SQLite</p></div>
+      <div class="skill-group"><strong>Outils</strong><p>Docker, Kubernetes, CI/CD, Cloudera, WordPress, PHPMyAdmin</p></div>
+
+      <h3>Langues</h3>
+      <ul class="list-simple">
+        <li>Français – Courant</li>
+        <li>Anglais – Opérationnel</li>
+        <li>Arabe – Intermédiaire</li>
       </ul>
     </aside>
 
-    <section class="projects card">
+    <section id="projects" class="card projects">
       <h2>Projets</h2>
 
       <article class="project">
         <h3>Darral — Application mobile</h3>
-        <p>Réseau social pour éleveurs (vente de moutons). Technologies : Flutter, Firebase, Firestore.</p>
+        <p>Réseau social pour éleveurs (vente de moutons). Conception et implémentation mobile.</p>
+        <p class="meta">Technos : Flutter • Firebase • Firestore • Auth • Storage</p>
       </article>
 
       <article class="project">
-        <h3>Analyse maladies cardiovasculaires</h3>
-        <p>Modélisation et prédiction des risques à partir du dataset Kaggle (Python, Scikit-learn).</p>
+        <h3>Analyse prédictive des maladies cardiovasculaires</h3>
+        <p>Nettoyage, visualisation et modélisation des données du dataset « Heart Disease » (Kaggle) pour prédiction de risques.</p>
+        <p class="meta">Technos : Python • Pandas • NumPy • Scikit-learn • Matplotlib • Seaborn</p>
       </article>
 
       <article class="project">
-        <h3>Gestion immobilière &amp; Microservices</h3>
-        <p>Application Fullstack (Elixir/Phoenix, Vue.js) et étude d'architectures microservices.</p>
+        <h3>Application de gestion immobilière &amp; Microservices</h3>
+        <p>Développement Fullstack et étude d'architectures microservices.</p>
+        <p class="meta">Technos : Elixir/Phoenix • SQLite • Vue.js • Java/JVM</p>
       </article>
 
       <article class="project">
-        <h3>Déploiement Web</h3>
-        <p>Déploiement d'applications avec Docker &amp; Kubernetes (Flask, React, MySQL).</p>
+        <h3>Déploiement Web &amp; Infrastructure</h3>
+        <p>Déploiement d'applications avec Docker &amp; Kubernetes ; configuration de services (Flask, React, MySQL, WordPress).</p>
+        <p class="meta">Technos : Docker • Kubernetes • Flask • React • MySQL</p>
       </article>
     </section>
 
-    <section class="experience card">
+    <section id="experience" class="card experience">
       <h2>Expérience</h2>
-      <h3>Téléconseillère — KSERV / Sonatel (09/2024 – 08/2025)</h3>
-      <p>Accueil et accompagnement client, traitement des requêtes techniques, suivi des dossiers. Développement d'aptitudes en communication et gestion de situations complexes.</p>
+      <div class="job">
+        <h3>Téléconseillère — KSERV / Sonatel</h3>
+        <p class="date">Sept. 2024 – Août 2025</p>
+        <ul>
+          <li>Accueil, écoute et accompagnement des clients.</li>
+          <li>Traitement des requêtes techniques et suivi des dossiers.</li>
+          <li>Développement d'aptitudes en communication et gestion de situations complexes.</li>
+        </ul>
+      </div>
 
-      <h3>Agent recenseur — ANSD (05/2023 – 06/2023)</h3>
-      <p>Collecte et traitement des données lors du Recensement Général de la Population et de l'Habitat. Acquisition de rigueur et conformité aux procédures méthodologiques.</p>
+      <div class="job">
+        <h3>Agent recenseur — ANSD</h3>
+        <p class="date">Mai 2023 – Juin 2023</p>
+        <ul>
+          <li>Collecte et traitement des données lors du Recensement Général de la Population et de l'Habitat.</li>
+          <li>Sensibilisation des populations et rédaction de rapports clairs.</li>
+        </ul>
+      </div>
     </section>
+
+    <section id="news" class="card news">
+      <h2>Actualités &amp; Nouveaux Projets</h2>
+      <article class="news-item">
+        <h3>📊 Projet : Tableau de bord – Analyse COVID-19 (en cours)</h3>
+        <p>Création d'un dashboard interactif pour visualiser les tendances (Pandas, Plotly).</p>
+      </article>
+      <article class="news-item">
+        <h3>🎓 Formation : Deep Learning avancé</h3>
+        <p>Suivi de modules sur CNN, RNN et transformers pour applications en vision et NLP.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="card contact">
+      <h2>Contact</h2>
+      <p>Tu peux me joindre par email ou via LinkedIn — je suis disponible pour un stage dès maintenant.</p>
+
+      <form action="mailto:fvtimaabinetou15@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© Fatima NDIAYE • Disponibilité : Immédiate • <a href="Fatima_NDIAYE_CV.pdf" download>Télécharger le CV</a></p>
+      <p>© Fatima NDIAYE • Disponibilité : Immédiate • <a href="FATIMA_NDIAYE_CV.pdf" download>Télécharger le CV</a></p>
     </div>
   </footer>
+
 </body>
 </html>

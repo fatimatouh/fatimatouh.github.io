@@ -1,20 +1,65 @@
-*{box-sizing:border-box}body{font-family:'Poppins',sans-serif;margin:0;color:#222;background:#f6f9fb}a{color:#007f7f;text-decoration:none}a:hover{text-decoration:underline}
-.container{max-width:1000px;margin:0 auto;padding:18px}
-.topband{background:linear-gradient(90deg,#40e0d0,#1fb3a7);color:#fff;padding:28px 0;border-bottom:6px solid rgba(0,0,0,0.04)}
-.topband .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.intro h1{margin:0;font-size:28px;letter-spacing:0.6px}
-.intro .surname{font-weight:700}
-.tagline{margin:6px 0 12px;opacity:0.95}
-.btn{display:inline-block;background:rgba(255,255,255,0.95);color:#0b5b5b;padding:8px 12px;border-radius:8px;font-weight:600}
-.profile-photo{width:140px;height:140px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,0.8)}
-.main-grid{display:grid;grid-template-columns:1fr 320px;gap:20px;padding:26px 0}
-.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);border:1px solid rgba(30,30,30,0.03)}
-.about p{line-height:1.6}
-.contact-list{list-style:none;padding:0;margin:12px 0 0}
-.contact-list li{margin-bottom:6px}
-.skills ul{list-style:none;padding:0;margin:8px 0}
-.skills li{margin-bottom:8px}
-.projects .project{margin-bottom:12px}
-.experience h3{margin:8px 0 6px}
-.footer{background:transparent;padding:14px 0;text-align:center;color:#555;font-size:13px} 
-@media(max-width:900px){.main-grid{grid-template-columns:1fr;}.topband .container{flex-direction:column;align-items:flex-start}.profile-photo{width:110px;height:110px}}
+/* Palette: #79764d primary */
+*{box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;margin:0;color:#222;background:#fbfbf8}
+a{color:#5d5a44;text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:18px}
+/* Navbar */
+.navbar{background:#fff;border-bottom:1px solid rgba(0,0,0,0.04);position:sticky;top:0;z-index:50}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{font-weight:700;color:#79764d;font-size:18px}
+.brand span{font-weight:900}
+.nav-links a{margin-left:18px;color:#5d5a44;font-weight:500}
+/* Hero */
+.hero{background:linear-gradient(90deg,#79764d,#6f6b48);color:#fff;padding:36px 0;border-bottom:6px solid rgba(0,0,0,0.03)}
+.hero-grid{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.intro h1{margin:0;font-size:34px;letter-spacing:0.4px}
+.intro .tagline{margin:10px 0 14px;opacity:0.95;max-width:620px}
+.cta{margin-top:8px}
+.btn{display:inline-block;background:rgba(255,255,255,0.95);color:#3f3c2f;padding:10px 14px;border-radius:8px;font-weight:600;margin-right:8px;box-shadow:0 6px 14px rgba(0,0,0,0.08)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff}
+.contact-inline{list-style:none;padding:0;margin:12px 0 0;display:flex;gap:12px;font-size:14px}
+.contact-inline a{color:rgba(255,255,255,0.95)}
+.photo-wrap{display:flex;align-items:center;justify-content:center}
+.photo{width:150px;height:150px;object-fit:cover;border-radius:50%;border:5px solid rgba(255,255,255,0.18)}
+
+/* Main grid */
+.main-grid{display:grid;grid-template-columns:1fr 340px;gap:22px;padding:26px 0}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 28px rgba(32,32,32,0.06);border:1px solid rgba(0,0,0,0.03)}
+.about h2, .projects h2, .experience h2, .skills h2, .news h2, .contact h2{margin-top:0;color:#3f3c2f}
+.list-simple{padding-left:18px}
+.skill-group{margin-bottom:10px}
+.skill-group p{margin:4px 0 0;color:#555;font-size:14px}
+.meta{color:#6b6b6b;font-size:13px;margin-top:6px}
+
+/* Projects */
+.project{margin-bottom:14px}
+
+/* Experience */
+.job{margin-bottom:12px}
+.job .date{font-size:13px;color:#6b6b6b;margin-bottom:8px}
+
+/* News */
+.news-item{margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,0.04)}
+.news-item h3{margin:0;color:#5d5a44}
+
+/* Contact form */
+.contact-form{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+input, textarea{padding:10px;border:1px solid #e6e6e0;border-radius:8px;font-family:'Poppins',sans-serif}
+button{background:#79764d;color:#fff;padding:10px;border-radius:8px;border:none;font-weight:600;cursor:pointer}
+button:hover{opacity:0.95}
+
+/* Footer */
+.footer{padding:18px 0;text-align:center;color:#777;font-size:13px}
+
+/* Animations */
+.card{opacity:0;transform:translateY(12px);animation:fadeInUp 0.6s ease forwards}
+@keyframes fadeInUp{to{opacity:1;transform:none}}
+
+/* Responsive */
+@media(max-width:980px){
+  .main-grid{grid-template-columns:1fr;padding:18px 0}
+  .hero-grid{flex-direction:column;align-items:flex-start}
+  .photo{width:120px;height:120px}
+  .nav-links{display:none}
+}
